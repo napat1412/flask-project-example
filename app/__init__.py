@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_oidc import OpenIDConnect
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db/db.sqlite3'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
 
 app.config.update({
     'SECRET_KEY': 'SomethingNotEntirelySecret',
